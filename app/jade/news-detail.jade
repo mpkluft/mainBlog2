@@ -1,0 +1,169 @@
+doctype html
+html(lang="ru")
+head
+    meta(charset='utf-8')   
+    meta(name='description', content='')  
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title="Комар Алекс" 
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    // Place favicon.ico in the root directory
+    // build:css styles/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+    // build:css styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+    // build:js scripts/vendor/modernizr.js
+    script(src='/bower_components/modernizr/modernizr.js')
+    // endbuild
+    // yandex shara begin
+    script(type='text/javascript', src='//yastatic.net/es5-shims/0.0.2/es5-shims.min.js', charset='utf-8')
+    script(type='text/javascript', src='//yastatic.net/share2/share.js', charset='utf-8')
+    // yandex shara end
+  body
+    //
+      [if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]  
+    header.main-header
+      .container
+        .row
+          .col-md-4
+            a.header-logo.
+              &lt;mpkLuft/&gt;
+          .col-md-8
+            h1.header-tagline.
+              Блог, создание сайтов, статьи по вебразработке, оффтоп
+    nav.main-nav
+      .container
+        .row
+          .col-md-6
+            ul.nav-menu
+              li.nav-menu__li
+                a(class='nav-menu__a' href="#") Блог
+              li.nav-menu__li
+                a(class='nav-menu__a' href="#") Портфолио
+              li.nav-menu__li
+                a(class='nav-menu__a' href="#") Об авторе
+          .col-md-3.col-sm-4
+            .input-group.input-group-sm
+              input(
+                type='text',
+                class='form-control'
+                placeholder='Я ищу...'
+              )
+              span.input-group-btn
+                button(type='button', class='btn btn-default')
+                  span.glyphicon.glyphicon-search
+          .col-md-3.col-sm-4
+            button(type='button' class='btn btn-default btn-sm btn_komar') Связаться с автором.
+    .main-content
+      .container
+        .row
+          .col-md-9
+            article.article-mini
+              h2.article__header 
+                a(
+                  class='article__a',
+                  href='#'
+                ) 48 вопросов, которые помогут вам сделать неуклюжую
+              .article__social 
+                time.time.article__time 19.02.2015
+                div(
+                  class='ya-share2',
+                  data-services='vkontakte,facebook,odnoklassniki,moimir,gplus,twitter,blogger,lj,whatsapp',
+                  data-size='s'
+                )
+              img.article__img(
+                class='main-container__img',
+                src='images/dogs.jpg',
+                alt='собачки'
+              )
+              p.article__text   Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Послушавшись рукописи коварных ему возвращайся снова, своего повстречался маленький которое агенство на берегу диких но бросил, lorem однажды свою большой до языкового напоивший реторический? Свой домах предупреждал дорогу единственное грамматики наш выйти, имеет оксмокс маленькая парадигматическая буквоград, он рекламных алфавит от всех.
+              a.article__read-more Читать далее
+            .article-pagination
+              ul.pagination
+                li
+                  a(href='#') &laquo;
+                li
+                  a(href='#') 1
+                li
+                  a(href='#') 2
+                li
+                  a(href='#') 3
+                li
+                  a(href='#') 4
+                li
+                  a(href='#') 5
+                li
+                  a(href='#') &raquo;
+          .col-md-3
+            aside.main-aside
+              .main-category
+                .main-category__header Категории
+                ul.main-category__items
+                  li.main-category__li
+                    a.main-category__a HTML
+                    span.main-category__number (100)
+                  li.main-category__li
+                    a.main-category__a CSS
+                    span.main-category__number (15)
+                  li.main-category__li
+                    a.main-category__a Javascript
+                    span.main-category__number (200)
+              .main-category.most-popular
+                .main-category__header Самое читаемое
+                ul.main-category__items.most-popular__items
+                  li.most-popular__li
+                    a.most-popular__a  Далеко-далеко за словесными горами в стране, гласных и согласных.
+                    span.glyphicon.glyphicon-comment.glyphkomar
+                    span.most-popular__number (11)
+                  li.most-popular__li
+                    a.most-popular__a  Далеко-далеко за словесными горами в стране, гласных и согласных.
+                    span.glyphicon.glyphicon-comment.glyphkomar
+                    span.most-popular__number (11)
+                  li.most-popular__li
+                    a.most-popular__a  Далеко-далеко за словесными горами в стране, гласных и согласных.
+                    span.glyphicon.glyphicon-comment.glyphkomar
+                    span.most-popular__number (11)
+    
+    footer.main-footer
+      .container
+        .row
+          .col-xs-12
+            span.main-footer__copyright Copyright © Komar Alex mpkluft.ru 2016    
+
+
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    script.
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='/bower_components/jquery/dist/jquery.js')
+    // endbower
+    // endbuild
+    // build:js scripts/plugins.js
+    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js')    
+    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js')    
+    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js')     
+    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js')
+    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js')
+    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js')
+    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js')
+    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js')
+    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js')
+    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js')
+    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js')
+    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js')
+    // endbuild
+    // build:js scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild
+
+    
