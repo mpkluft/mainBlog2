@@ -63,13 +63,12 @@ head
         .row
           .owl-carousel.carousel
             .carousel__chapter
-              a(href="images/dez1.jpg", class="fancybox", rel="gallery", title="Sample title 1")
-                img(src="images/dez1.jpg", alt="", class="carousel__img")
+              a(href="images/_home.png", data-lightbox="roadtrip", data-title="My caption")
+                img(src="images/_home.png", alt="EPGASH", class="carousel__img")
             .carousel__chapter
-              img(src="images/dez2.jpg", alt="", class="carousel__img")
-            .carousel__chapter
-              img(src="images/dez3.jpg", alt="", class="carousel__img")
-    
+              a(href="images/_home2.jpg", data-lightbox="roadtrip", data-title="My caption")
+                img(src="images/_home2.jpg", alt="", class="carousel__img")
+
     footer.main-footer
       .container
         .row
@@ -105,8 +104,7 @@ head
     script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js')
     script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js')
     script(src='/bower_components/owlcarousel/owl-carousel/owl.carousel.js')
-    script(src='/bower_components/fancybox/source/jquery.fancybox.js')
-
+    script(src='/bower_components/lightbox2/dist/js/lightbox.js')
 
     // endbuild
     // build:js scripts/main.js

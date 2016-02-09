@@ -3,10 +3,11 @@ console.log('\'Allo \'Allo!');
 $(".carousel").owlCarousel({
   items: 1,
   autoPlay: 4000,
-  lazyLoad: true
+  lazyLoad: true,
+  singleItem: true,
 });
 
-  $(".carousel__chapter").css('height', $(window).height()-$(".main-header").height()-$(".main-footer").height()-$(".main-nav").height()-80);
+$(".carousel__chapter").css('height', $(window).height()-$(".main-header").height()-$(".main-footer").height()-$(".main-nav").height()-80);
 
 $(window).resize(function(){
 
@@ -18,4 +19,6 @@ $(window).resize(function(){
 
 });
 
-$('.fancybox').fancybox();
+   lightbox.option({
+   		'wrapAround': true
+    })
