@@ -13,6 +13,7 @@ const reload = browserSync.reload;
 gulp.task('jade', function(){
   gulp.src('app/jade/*.jade')
     .pipe($.plumber())
+    .pipe($.rigger())
     .pipe($.jade(
       {pretty: true}
      ))
@@ -38,6 +39,7 @@ gulp.task('styles', () => {
 gulp.task('scripts', () => {
   return gulp.src('app/scripts/**/*.js')
     .pipe($.plumber())
+    .pipe($.rigger())
     .pipe($.sourcemaps.init())
     .pipe($.babel())
     .pipe($.sourcemaps.write('.'))

@@ -13,6 +13,8 @@ $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "partials/owl.carousel.scss";
+@import "partials/jquery.fancybox.scss";
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -233,21 +235,31 @@ input.form-control {
   display: inline-block;
   margin-left: 15px;
 }
-
-
-
-
 //end aside
 
-
 //begin footer
+.main-footer {
+  background-color: #2C2C2C;
+  margin-top: 30px;
+}
+
 .main-footer__copyright {
   display: block;
-  background-color: #2C2C2C;
   color: #fff;
   padding-left: 3px;
 }
-
 //end footer
+
+// begin owl-cariusel
+
+.carousel__chapter {
+  overflow: hidden;
+}
+.carousel__img {
+  width: 100%;
+}
+
+
+// end owl-carousel
 
 @import "partials/media.scss";
