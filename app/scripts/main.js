@@ -16,9 +16,4 @@ $(window).resize(function(){
       footerHeight = $(".main-footer").height()+80,
       navHeight = $(".main-nav").height();
   $(".carousel__chapter").css('height', windowHeight-hederHeight-footerHeight-navHeight);
-
 });
-
-   lightbox.option({
-   		'wrapAround': true
-    })

@@ -61,108 +61,108 @@ head
     .main-content
       .container
         .row
-          .col-md-9
-            article.article-mini
-              h2.article__header 
-                a(
-                  class='article__a',
-                  href='news-detail.html'
-                ) 48 вопросов, которые помогут вам сделать неуклюжую
-              .article__social 
-                time.time.article__time 19.02.2015
-                div(
-                  class='ya-share2',
-                  data-services='vkontakte,facebook,odnoklassniki,moimir,gplus,twitter,blogger,lj,whatsapp',
-                  data-size='s'
-                )
-              img.article__img(
-                class='main-container__img',
-                src='images/dogs.jpg',
-                alt='собачки'
-              )
-              p.article__text   Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Послушавшись рукописи коварных ему возвращайся снова, своего повстречался маленький которое агенство на берегу диких но бросил, lorem однажды свою большой до языкового напоивший реторический? Свой домах предупреждал дорогу единственное грамматики наш выйти, имеет оксмокс маленькая парадигматическая буквоград, он рекламных алфавит от всех.
-              a.article__read-more Читать далее
-            article.article-mini
-              h2.article__header 
-                a(
-                  class='article__a',
-                  href='#'
-                ) 48 вопросов помогут вам сделать неуклюжую http://devacademy.ru
-              .article__social 
-                time.time.article__time 19.02.2015
-                div(
-                  class='ya-share2',
-                  data-services='vkontakte,facebook,odnoklassniki,moimir,gplus,twitter,blogger,lj,whatsapp',
-                  data-size='s'
-                )
-              img.article__img(
-                class='main-container__img',
-                src='images/cats.jpg',
-                alt='собачки'
-              )
-              p.article__text   Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Послушавшись рукописи коварных ему возвращайся снова, своего повстречался маленький которое агенство на берегу диких но бросил, lorem однажды свою большой до языкового напоивший реторический? Свой домах предупреждал дорогу единственное грамматики наш выйти, имеет оксмокс маленькая парадигматическая буквоград, он рекламных алфавит от всех.
-              a.article__read-more Читать далее
-            article.article-mini
-              h2.article__header 
-                a(
-                  class='article__a',
-                  href='#'
-                ) 48 вопросов, которые помогут вам сделать неуклюжую
-              .article__social 
-                time.time.article__time 19.02.2015
-                div(
-                  class='ya-share2',
-                  data-services='vkontakte,facebook,odnoklassniki,moimir,gplus,twitter,blogger,lj,whatsapp',
-                  data-size='s'
-                )
-              p.article__text   Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Послушавшись рукописи коварных ему возвращайся снова, своего повстречался маленький которое агенство на берегу диких но бросил, lorem однажды свою большой до языкового напоивший реторический? Свой домах предупреждал дорогу единственное грамматики наш выйти, имеет оксмокс маленькая парадигматическая буквоград, он рекламных алфавит от всех.
-              a.article__read-more Читать далее
-            .article-pagination
-              ul.pagination
-                li
-                  a(href='#') &laquo;
-                li
-                  a(href='#') 1
-                li
-                  a(href='#') 2
-                li
-                  a(href='#') 3
-                li
-                  a(href='#') 4
-                li
-                  a(href='#') 5
-                li
-                  a(href='#') &raquo;
-          .col-md-3
-            aside.main-aside
-              .main-category
-                .main-category__header Категории
-                ul.main-category__items
-                  li.main-category__li
-                    a.main-category__a HTML
-                    span.main-category__number (100)
-                  li.main-category__li
-                    a.main-category__a CSS
-                    span.main-category__number (15)
-                  li.main-category__li
-                    a.main-category__a Javascript
-                    span.main-category__number (200)
-              .main-category.most-popular
-                .main-category__header Самое читаемое
-                ul.main-category__items.most-popular__items
-                  li.most-popular__li
-                    a.most-popular__a  Далеко-далеко за словесными горами в стране, гласных и согласных.
-                    span.glyphicon.glyphicon-comment.glyphkomar
-                    span.most-popular__number (11)
-                  li.most-popular__li
-                    a.most-popular__a  Далеко-далеко за словесными горами в стране, гласных и согласных.
-                    span.glyphicon.glyphicon-comment.glyphkomar
-                    span.most-popular__number (11)
-                  li.most-popular__li
-                    a.most-popular__a  Далеко-далеко за словесными горами в стране, гласных и согласных.
-                    span.glyphicon.glyphicon-comment.glyphkomar
-                    span.most-popular__number (11)
-    
+          .article-wrap
+            .row
+              .col-md-4.col-sm-6
+                article.article
+                  .img-wrap__article
+                    img.img__article(src="images/dogs.jpg", alt="")
+                  .link-tag__wrap
+                    a.link-tag__article(href="#") PHP
+                    a.link-tag__article(href="#") Оффтоп
+                  h2.title__article
+                    a.title__article(href="#") Далеко-далеко за словесными горами в стране, гласных.
+                  time.time__article 12 часов назад
+              .col-md-4.col-sm-6
+                article.article
+                  .img-wrap__article
+                    img.img__article(src="images/cats.jpg", alt="")
+                  .link-tag__wrap
+                    a.link-tag__article(href="#") PHP
+                    a.link-tag__article(href="#") Оффтоп
+                  h2.title__article
+                    a.title__article(href="#") Далеко-далеко за словесными горами в стране, гласных.горами в стране, гласных.
+                  time.time__article 12 часов назад
+              .col-md-4.col-sm-6
+                article.article
+                  .img-wrap__article
+                    img.img__article(src="images/site.jpg", alt="")
+                  .link-tag__wrap
+                    a.link-tag__article(href="#") PHP
+                    a.link-tag__article(href="#") Оффтоп
+                  h2.title__article
+                    a.title__article(href="#") Далеко-далеко за словесными горами в стране, гласных.
+                  time.time__article 12 часов назад
+              .col-md-4.col-sm-6
+                article.article
+                  .img-wrap__article
+                    img.img__article(src="images/dogs.jpg", alt="")
+                  .link-tag__wrap
+                    a.link-tag__article(href="#") PHP
+                    a.link-tag__article(href="#") Оффтоп
+                  h2.title__article
+                    a.title__article(href="#") Далеко-далеко за словесными горами в стране, гласных.
+                  time.time__article 12 часов назад
+              .col-md-4.col-sm-6
+                article.article
+                  .img-wrap__article
+                    img.img__article(src="images/cats.jpg", alt="")
+                  .link-tag__wrap
+                    a.link-tag__article(href="#") PHP
+                    a.link-tag__article(href="#") Оффтоп
+                  h2.title__article
+                    a.title__article(href="#") Далеко-далеко за словесными горами в стране, гласных.горами в стране, гласных.
+                  time.time__article 12 часов назад
+              .col-md-4.col-sm-6
+                article.article
+                  .img-wrap__article
+                    img.img__article(src="images/site.jpg", alt="")
+                  .link-tag__wrap
+                    a.link-tag__article(href="#") PHP
+                    a.link-tag__article(href="#") Оффтоп
+                  h2.title__article
+                    a.title__article(href="#") Далеко-далеко за словесными горами в стране, гласных.
+                  time.time__article 12 часов назад
+
+            .row
+              .col-xs-12
+                .article-pagination__main-content
+                  ul.pagination.pagination_komar
+                    li
+                      a(href='#') &laquo;
+                    li
+                      a(href='#') 1
+                    li
+                      a(href='#') 2
+                    li
+                      a(href='#') 3
+                    li
+                      a(href='#') 4
+                    li
+                      a(href='#') 5
+                    li
+                      a(href='#') &raquo;
+            .row
+              .col-xs-12
+                .latest-items
+                  h2.items-title__latest-items   Последние публикации
+                  h3.title__latest-items
+                    a.title__latest-link(href="#") Далеко-далеко за словесными горами в стране, гласных.
+                    span.glyphicon.glyphicon-envelope
+                    span.message-count__latest-items 13
+                  h3.title__latest-items
+                    a.title__latest-link(href="#") Далеко-далеко за словесными горами в стране, гласных. в стране, гласных. в стране, гласных.
+                    span.glyphicon.glyphicon-envelope
+                    span.message-count__latest-items 13
+                  h3.title__latest-items
+                    a.title__latest-link(href="#") Далеко-далеко за словесными горами в стране, гласных. в стране, гласных. в стране, гласных.
+                    span.glyphicon.glyphicon-envelope
+                    span.message-count__latest-items 13
+                  h3.title__latest-items
+                    a.title__latest-link(href="#") Далеко-далеко за словесными горами в стране, гласных. в стране, гласных. в стране, гласных.
+                    span.glyphicon.glyphicon-envelope
+                    span.message-count__latest-items 13
+
     footer.main-footer
       .container
         .row
