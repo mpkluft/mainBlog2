@@ -13,7 +13,7 @@ $(window).resize(function(){
 
   var windowHeight = $(window).height(),
       hederHeight = $(".main-header").height(),
-      footerHeight = $(".main-footer").height()+80,
+      footerHeight = $(".main-footer").height()+50,
       navHeight = $(".main-nav").height();
   $(".carousel__chapter").css('height', windowHeight-hederHeight-footerHeight-navHeight);
 });

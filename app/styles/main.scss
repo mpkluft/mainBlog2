@@ -169,10 +169,14 @@ input.form-control {
     text-decoration: none;
   }
 }
-
-.title__article {
+.title-wrap__article {
   height: 137px;
   overflow: hidden;
+}
+
+.title__article {
+  font-size: 25px;
+
   &:hover {
     text-decoration: underline;
   }

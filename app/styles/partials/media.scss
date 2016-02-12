@@ -16,10 +16,16 @@
   .main-header {
     height: 150px;
   }
-  div.owl-carousel{
-    display: none;
-  }
 
+  .title-article {
+    font-size: 21px;
+  }
+  .title-wrap__article {
+    height: 120px;
+  }
+  .img-wrap__article {
+    height: 160px;
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
@@ -57,6 +63,7 @@
   .time__article {
     margin: 10px 0 0 20px;
   }
+
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -99,7 +106,12 @@
     width: 74%;
     font-size: 17px;
   }
-
+  .img-wrap__article {
+    height: 200px;
+  }
+  .title-wrap__article {
+    height: 80px;
+  }
 }
 
 /* Custom, iPhone Retina */
