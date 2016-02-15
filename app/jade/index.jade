@@ -22,6 +22,7 @@ head
     script(type='text/javascript', src='//yastatic.net/share2/share.js', charset='utf-8')
     // yandex shara end
   body
+    include ./mixins/mixins.jade
     //
       [if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -63,28 +64,13 @@ head
         .row
           .article-wrap
             .row
-              .col-md-3.col-sm-4
-                article.article
-                  .img-wrap__article
-                    img.img__article(src="images/dogs.jpg", alt="")
-                  .link-tag__wrap
-                    a.link-tag__article(href="#") PHP
-                    a.link-tag__article(href="#") Оффтоп
-                  h3.title-wrap__article
-                    a.title__article(href="#") Далеко-далеко за словесными горами в стране, гласных.
-                  time.time__article 12 часов назад
-              .col-md-3.col-sm-4
-                article.article
-                  .img-wrap__article
-                    img.img__article(src="images/cats.jpg", alt="")
-                  .link-tag__wrap
-                    a.link-tag__article(href="#") PHP
-                    a.link-tag__article(href="#") Оффтоп
-                  h3.title-wrap__article
-                    a.title__article(href="#") Далеко-далеко за словесными горами в стране, гласных. Далеко-далеко за словесными горами в стране, гласных.
-                  time.time__article 12 часов назад
-
-
+              +article("images/dogs.jpg")
+              +article("images/cats.jpg")
+              +article("images/site.jpg")
+              +article("images/cats.jpg")
+              +article("images/dogs.jpg")
+              +article("images/cats.jpg")
+              +article("images/site.jpg")
             .row
               .col-xs-12
                 .article-pagination__main-content
@@ -107,22 +93,9 @@ head
               .col-xs-12
                 .latest-items
                   h2.items-title__latest-items   Последние публикации
-                  h3.title__latest-items
-                    a.title__latest-link(href="#") Далеко-далеко за словесными горами в стране, гласных.
-                    span.glyphicon.glyphicon-envelope
-                    span.message-count__latest-items 13
-                  h3.title__latest-items
-                    a.title__latest-link(href="#") Далеко-далеко за словесными горами в стране, гласных. в стране, гласных. в стране, гласных.
-                    span.glyphicon.glyphicon-envelope
-                    span.message-count__latest-items 13
-                  h3.title__latest-items
-                    a.title__latest-link(href="#") Далеко-далеко за словесными горами в стране, гласных. в стране, гласных. в стране, гласных.
-                    span.glyphicon.glyphicon-envelope
-                    span.message-count__latest-items 13
-                  h3.title__latest-items
-                    a.title__latest-link(href="#") Далеко-далеко за словесными горами в стране, гласных. в стране, гласных. в стране, гласных.
-                    span.glyphicon.glyphicon-envelope
-                    span.message-count__latest-items 13
+                  +miniArticle
+                  +miniArticle
+                  +miniArticle
 
     footer.main-footer
       .container
@@ -164,5 +137,3 @@ head
     // build:js scripts/main.js
     script(src='scripts/main.js')
     // endbuild
-
-    

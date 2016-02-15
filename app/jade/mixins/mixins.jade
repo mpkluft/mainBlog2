@@ -1,0 +1,17 @@
+mixin article(picture)
+  .col-md-3.col-sm-4
+    article.article
+      .img-wrap__article
+        img.img__article(src=picture , alt="")
+      .link-tag__wrap
+        a.link-tag__article(href="#") PHP
+        a.link-tag__article(href="#") Оффтоп
+      h3.title-wrap__article
+        a.title__article(href="#") Далеко-далеко за словесными горами в стране, гласных.
+      time.time__article 12 часов назад
+
+mixin miniArticle
+  h3.title__latest-items
+    a.title__latest-link(href="#") Далеко-далеко за словесными горами в стране, гласных.
+    span.glyphicon.glyphicon-envelope
+    span.message-count__latest-items 13
