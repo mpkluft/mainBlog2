@@ -47,6 +47,8 @@ SHOW TABLES;
 CREATE DATABASE dbname;
 >>>or
 mysqladmin -u username -p create dbname;
+>>>delete table
+DROP TABLE tableName
 >>> create user
 CREATE USER 'bob'@'localhost' IDENTIFIED BY 'password';
 >>> privileges
@@ -54,7 +56,7 @@ GRANT ALL PRIVILEGES ON wordpress_db.* to 'bob'@'localhost';
 >>>add new column
 ALTER TABLE Employees ADD COLUMN middle_name CHAR(10) NULL AFTER first_name;
 >>>create table
-CREATE TABLE news ( id int not null auto_increment, name varchar(150), tags varchar(40), date timestamp, text text, picture varchar(25),primary key(id));
+CREATE TABLE news ( id int not null auto_increment, name varchar(150), tags varchar(40), date timestamp, text text, picture varchar(25),primary key(id);
 >>>show tables
 describe tablesName
 
