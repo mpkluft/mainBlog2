@@ -59,10 +59,6 @@ ALTER TABLE Employees ADD COLUMN middle_name CHAR(10) NULL AFTER first_name;
 CREATE TABLE news ( id int not null auto_increment, name varchar(150), tags varchar(40), date timestamp, text text, picture varchar(25),primary key(id);
 >>>show tables
 describe tablesName
->>dump
-mysqldump -uadmin -pSuperPassword mydb_forum > mydb_forum.sql
->>load dump 
-mysql -uadmin -pSuperPassword mydb_forum < mydb_forum.sql
 
 
 
