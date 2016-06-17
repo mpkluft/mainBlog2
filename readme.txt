@@ -22,7 +22,7 @@ git remote rm origin -удаляет привязку
 CSS
 сделать из дива круг - border-radius: 50%
 выровнять по центру блок с position: absolute;  left:50% + margin-left: -width/2
-табличная верстка дивами display:table;, display:table-row; и display:table-cell;
+ display:table;, display:table-row; и display:table-cell;
 =======
 git remote rm origin -������� ��������
 ///////////////////////////
